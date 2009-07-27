@@ -1,0 +1,28 @@
+.header {background-color:#f5f7f7;font:bold 13px Arial;margin-bottom:10px; color:#000000; height:23px;padding:5px 0 0 5px;margin-top:5px;float:left;width:100%;}
+.taskname {width:550px;font:12px Arial;float:left;margin-left:10px;color:#555555}
+.taskname a{width:300px;font:12px Arial;color:#555555;text-decoration:none;}
+.taskname a:hover{color:#9ab223;}
+.projectname {width:160px;font:11px Arial;float:left;color:#9ab223;text-align:right;}
+.projectname a{width:120px;font:12px Arial;color:#555555;}
+.projectname a:hover{color:#9ab223;}
+.resourcename {width:150px;font:12px Arial;float:left;margin-left:90px;color:#555555;}
+.resourcename a{width:150px;font:12px Arial;color:#9ab223;text-decoration:none;}
+.resourcename a:hover{text-decoration:underline;}
+.duedate { font:12px Arial;float:left;color:#555555;width:85px;}
+
+.resource_due_info {float:right}
+
+.editlink {float:left;margin-left:20px; height:20px;}
+.deletelink {float:left;margin-left:20px; height:20px;margin-right:15px;}
+
+.late_task {font:italic 12px Arial; float:left;color:red;width:85px;}
+.current_week_task {font:italic 12px Arial; float:left;color:#555555;width:85px;}
+
+.edit_task{float:left;border-bottom:solid 1px #e0e0e0;padding-top:5px;padding-bottom:5px;}
+
+.task_status {width:150px;font:12px Arial;float:left;color:#555555;}
+.check {float:left;}
+
+.todo_task {width:550px;font:12px Arial;float:left;margin-left:10px;color:#555555;padding-top:4px;margin-right:80px;}
+.todo_duedate {font:italic 12px Arial; float:left;color:#555555;text-align:right;}
+.delim{float:left;margin:0 5px 0 5px;}

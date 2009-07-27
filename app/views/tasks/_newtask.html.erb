@@ -1,0 +1,36 @@
+
+
+<div id="field">
+<% form_remote_for(@task) do |f| %>
+  <%= f.error_messages %>
+	<div class="tags">
+		<div class="tasklabel">TASK</div>
+		<div class="taginfo">
+			<div class="resourcelabel">RESOURCE</div>
+		 	<div class="startdatelabel">START DATE </div>
+			<div class="enddatelabel">END DATE</div>
+		</div>
+	</div>
+	<div class="seperator"></div>
+	<div class="fields">
+		<div>
+			<%= f.text_field(:title) %>
+		</div>
+		<div class="task_input_info">
+			<div class="select">
+				<%= f.collection_select :resource, Resource.find(:all), :id, :firstname %>
+			</div>
+			<div class="dateselect">
+				<%= f.date_select (:startdate, :discard_year => true, :use_short_month => true)%>
+			</div>
+		    <div class="dateselect">
+				<%= f.date_select (:enddate, :discard_year => true, :use_short_month => true)%>
+			</div>		
+			<div class="submit" id="submit">
+				<%= f.submit 'Create Task' %>
+			</div>
+		</div>
+	</div>
+	<div class="seperator"></div>
+<% end %>
+</div>

@@ -1,0 +1,26 @@
+
+
+<p>
+  <b>Title:</b>
+  <%=h @task.title %>
+</p>
+
+
+<p>
+  <b>Resource:</b>
+  <%=h @task.resource %>
+</p>
+<p>
+  <b>Start Date:</b>
+  <%=h @task.startdate %>
+</p>
+<p>
+  <b>End Date:</b>
+  <%=h @task.enddate %>
+</p>
+
+
+
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

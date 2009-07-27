@@ -1,0 +1,23 @@
+<div id="updatetask_<%= @task.id %>">
+<% form_remote_for :task, @task, :url => {:action => 'update_dashboard_task', :id => @task.id, :method => :put} do |f| %>
+  <%= f.error_messages %>
+	<div class="editfields">
+		<span>
+			<%= f.text_field(:title, :size => 50)%>
+		</span>
+		<span class="select">
+			<%= f.collection_select :resource, Resource.find(:all), :id, :firstname %>
+		</span>
+		<span class="dateselect">
+			<%= f.date_select (:startdate, :discard_year => true, :use_short_month => true)%>
+		</span>
+	    <span class="dateselect">
+			<%= f.date_select (:enddate, :discard_year => true, :use_short_month => true)%>
+		</span>		
+		<span class="submit">
+					<%= f.submit 'Update' %>
+		</span>
+	</div>
+
+<% end %>
+</div>

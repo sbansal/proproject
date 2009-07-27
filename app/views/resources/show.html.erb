@@ -1,0 +1,28 @@
+<p>
+  <b>First Name:</b>
+  <%=h @resource.firstname %>
+</p>
+
+<p>
+  <b>Last Name:</b>
+  <%=h @resource.lastname %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @resource.email %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @resource.title %>
+</p>
+
+<p>
+  <b>Department:</b>
+  <%=h @resource.department %>
+</p>
+
+
+<%= link_to 'Edit', edit_resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>

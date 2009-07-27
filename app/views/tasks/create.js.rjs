@@ -1,0 +1,3 @@
+page.insert_html :bottom, :taskslist, :partial => 'task', :object => @task
+page.visual_effect :highlight, "task_#{@task.id}"
+page[:new_task].reset

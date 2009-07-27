@@ -1,0 +1,12 @@
+<% div_for(task) do %>
+    <div class="taskname_r"><%=h task.title %></div>
+	<div class="taskinfo">
+		<div class="resource_r"><%=h Resource.find_by_id(task.resource).firstname.capitalize %></div>
+		<div class="startdate_r"><%=h task.startdate %></div>
+		<div class="enddate_r"><%=h task.enddate %></div>
+		<div class="handle">DRAG</div>
+		<div class="link_r"><%= link_to_remote image_tag("/images/edit.png", :border => 0), :url => {:action => 'edit_task', :id => task }%></div>
+		<div class="link_r"><%= link_to image_tag("/images/delete.png", :border => 0), task, :confirm => 'Are you sure?', :method => :delete %></div>
+	</div>
+<% end %>
+<div class="seperator"></div>

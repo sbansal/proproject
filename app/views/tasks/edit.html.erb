@@ -1,0 +1,28 @@
+<h1>Editing task</h1>
+
+<% form_for(@task) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :resource %><br />
+    <%= f.collection_select :resource, Resource.find(:all), :id, :firstname %>
+  </p>
+  <p>
+    <%= f.label :startdate %><br />
+    <%= f.date_select (:startdate, :discard_year => true, :use_short_month => true)%>
+  </p>
+  <p>
+    <%= f.label :endate %><br />
+    <%= f.date_select (:enddate, :discard_year => true, :use_short_month => true)%>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @task %> |
+<%= link_to 'Back', tasks_path %>

@@ -1,0 +1,15 @@
+<% div_for(@task) do %>
+    <div class="taskname"><%= @task.title %></div>	
+	<div class="resource_due_info">
+		<div class="resourcename">Assigned to <%=link_to Resource.resource(@task.resource) %></div>	
+		<% if @task.enddate.beginning_of_day <= Time.now() %>
+		  <div class="late_task">Was due <%=h @task.enddate.strftime("%b %d") %> </div> 
+		<% else %>
+		  <div class="current_week_task">Due <%=h @task.enddate.strftime("%b %d") %></div>
+		<% end %>
+	</div>
+	
+	<!-- <div class="editlink"><%= link_to_remote image_tag("/images/edit.png", :border => 0), :url => {:action => 'edit_dashboard_task', :id => @task }%></div>
+	<div class="deletelink"><%= link_to image_tag("/images/todo.png", :border => 0), :url => {:action => 'complete', :id => @task} %></div> -->
+<% end %>
+<div class="seperator"></div>

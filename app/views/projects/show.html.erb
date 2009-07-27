@@ -1,0 +1,28 @@
+<p>
+  <b>Title:</b>
+  <%=h @project.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @project.description %>
+</p>
+
+<p>
+  <b>Startdate:</b>
+  <%=h @project.startdate %>
+</p>
+
+<p>
+  <b>Enddate:</b>
+  <%=h @project.enddate %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%=h Resource.find_by_id(@project.owner).firstname.capitalize %>
+</p>
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

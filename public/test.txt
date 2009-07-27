@@ -1,0 +1,17 @@
+//Project name from the new task /views/tasks/_newtask.html.erb
+<!-- <%= f.text_field(:status, :size => 4)%>
+	<%= f.collection_select :project_id, Project.find(:all), :id, :title %> -->
+	
+	
+	
+	<!-- <%= render :partial => 'task', :locals => {:task => task} %> -->
+	
+
+#dashboard method in task controller
+if session[:project_id]
+  @tasks = Task.late_tasks(session[:project_id])
+  @due_tasks = Task.due_this_week(session[:project_id])
+else
+  @tasks = Task.late_tasks(@current_project.id)
+  @due_tasks = Task.due_this_week(@current_project.id)
+end

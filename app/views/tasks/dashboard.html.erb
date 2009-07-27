@@ -1,0 +1,28 @@
+<div id="leftcontainer">
+	<% @due_tasks.each do |project_id, tasks| %>
+	<div class="header"><%= Project.title(project_id) %></div>
+	  <% for @task in tasks.sort_by{|i| i[:enddate]} %>
+	    <%= render :partial => 'dashboard_task', :locals => {:task => @task} %>
+	  <% end %>
+	<% end %>
+	<div class="header">Recently Activity</div>
+	<% @completed_tasks.each do |project_id, completed_tasks| %>
+		<% for @completed_task in completed_tasks.sort_by{|i| i[:completed_at]} %>
+			<% div_for(@completed_task) do %>
+				<div class="taskname"><%= @completed_task.title %></div>
+				<div class="resource_due_info">
+					<div class="resourcename">completed by <%=link_to Resource.resource(@completed_task.resource) %></div>
+					<div class="duedate">On <%=h @completed_task.completed_at.strftime("%b %d") %></div>
+				</div>
+					
+				
+			<% end %>
+			<div class="seperator"></div>
+		<% end %>
+	<% end %>
+</div>
+
+<div id="rightcontainer">
+	<%= render :partial => 'rightcontainer' %>
+</div>
+<div class="seperator"></div>

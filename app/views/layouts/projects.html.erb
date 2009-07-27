@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Projects: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'project' %>
+  <%= stylesheet_link_tag 'dashboard' %>
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'scriptaculous.js' %>
+</head>
+<body>
+	<div id="container" >
+		<div class="topbar">
+			<div class="userinfo">
+				<% if current_user %>
+				<span class="user">Welcome, <%= current_user.firstname.capitalize%></span> |
+				<span class="userbar"><%= link_to 'My Account', user_path(current_user) %></span> |
+				<span class="userbar"><%= link_to 'Log Out', logout_path %></span> 
+				<% end %>
+			</div>
+			<div class="name"></div> 
+			<div id ="navbar">
+				<span id="dashboard" class = <%= session[:current_page] == "dashboard" ? "dashboard_current" : "dashboard"%>><%= link_to 	'DASHBOARD',dashboard_path %></span>
+				<span id="plan" class = <%= session[:current_page] == "plan" ? "plan_current" : "plan"%>><%= link_to 'PROJECT PLAN',project_plan_url(session[:project_id] || @current_project.id) %></span>
+				<span id="todo" class = <%= session[:current_page] == "todo" ? "todo_current" : "todo"%>><%= link_to 'TODO LIST', todo_path %></span>
+				<!-- <span id="status" class="status"><%= link_to 'PROJECT STATUS'%></span> -->
+				<span id="people" class="people"><%= link_to 'PEOPLE'%></span>
+			</div>
+		</div>
+		<div class="seperator"></div>
+		<div id="maincontainer">
+			<%= yield %>
+		</div>
+		<div class="seperator"></div>
+		<div align="center" id="footer">
+			<span> Website © Copyright 2009 Shubham Bansal. All Rights Reserved. </span>
+		</div>
+	</div>
+</body>
+</html>

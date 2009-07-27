@@ -1,0 +1,113 @@
+
+#container{width:1335px;margin-left:auto;margin-right:auto;}
+
+.userinfo {font:12px Arial; text-align:right;color:#555555;padding-right:10px;}
+
+.user {font:13px Arial;color:#9ab223;margin-right:2px;}
+.userbar a{font:12px Arial;color:#555555; margin:0 2px 0 2px;}
+.userbar a:hover {color : #9ab223;}
+
+.seperator {clear:both;}
+.topbar  {float:left;width:1335px;}
+
+.name {background:url(../images/logo.png) no-repeat;height:63px;float:left;width:332px;margin-bottom:10px;}
+
+#navbar {text-align:right;float:right;height:35px;margin-top:40px;padding-right:10px;}
+
+
+.plan {background-color:#555555;float:left;margin-right:3px;}
+.plan a {color : #E2E4E4;height:25px;padding-top:10px;width:120px;text-align:center;float:left;font:12px Arial;text-decoration:none;}
+.plan a:hover {color : #9ab223;}
+.plan_current {background-color:#E2E4E4;float:left;margin-right:3px;}
+.plan_current a {color : #555555;height:25px;width:120px;text-align:center;float:left;font:12px Arial;text-decoration:none;padding-top:10px;}
+.plan_current a:hover {color : #9ab223;}
+
+
+#tasks a {color:#555555;font:12px Arial;text-decoration:none;}
+#tasks a:hover {color:#9ab223;}
+
+.todo {background-color:#555555;float:left;margin-right:3px;}
+.todo a {color:#E2E4E4;font:12px Arial;text-decoration:none;height:25px;width:90px;text-align:center;float:left;padding-top:10px;}
+.todo a:hover {color:#9ab223;}
+.todo_current {background-color:#E2E4E4;float:left;margin-right:3px;}
+.todo_current a {color:#555555;font:12px Arial;text-decoration:none;height:25px;width:90px;text-align:center;float:left;padding-top:10px;}
+.todo_current a:hover {color:#9ab223;}
+
+.status {background-color:#555555;float:left;margin-right:3px;}
+.status a {color:#E2E4E4;font : 12px Arial;text-decoration : none;height:25px;width:140px;text-align:center;float:left;padding-top:10px;}
+.status a:hover {color:#9ab223;}
+.status_current {background-color:#E2E4E4;float:left;margin-right:3px;}
+.status_current a {color:#555555;font : 12px Arial;text-decoration : none;height:25px;width:140px;text-align:center;float:left;padding-top:10px;}
+.status_current a:hover {color:#9ab223;}
+
+.dashboard {background-color:#555555;margin-right:3px;float:left;}
+.dashboard a {color:#E2E4E4;font:12px Arial;text-decoration:none;height:25px;float:left;width:100px;text-align:center;padding-top:10px;}
+.dashboard a:hover {color:#9ab223;}
+.dashboard_current {background-color:#E2E4E4;margin-right:3px;float:left;}
+.dashboard_current a {color:#555555;font:12px Arial;text-decoration:none;height:25px;float:left;width:100px;text-align:center;padding-top:10px;}
+.dashboard_current a:hover {color:#9ab223;}
+
+.people {background-color:#555555;margin-right:3px;float:left}
+.people a {color : #E2E4E4;font : 12px Arial;text-decoration : none;height:25px;float:left;width:75px;text-align:center;padding-top:10px;}
+.people a:hover {color : #9ab223;}
+.people_current {background-color:#E2E4E4;margin-right:3px;float:left}
+.people_current a {color : #555555;font : 12px Arial;text-decoration : none;height:25px;float:left;width:75px;text-align:center;padding-top:10px;}
+.people_current a:hover {color : #9ab223;}
+
+#maincontainer {float:left;background-color:#E2E4E4;width:1335px;padding-bottom:20px;}
+#leftcontainer {float:left;background-color:#ffffff;margin:20px 0 0 20px; padding:10px; width:885px;}
+#rightcontainer {float:left;width:360px;background-color:#E2E4E4;height:550px;padding:20px;}
+#rightcontainer .logo {height:100px;background-color:#ffffff; float:left; width:350px; padding:40px 0 0 10px;}
+#rightcontainer .project_list_header {float:left;font:13px Arial;color:white;background-color:#555555;width:350px;height:25px;margin-top:20px;padding:7px 0 0 10px; }
+#rightcontainer .project_list {margin:15px 0 0 15px;font:12px Arial;float:left;}
+#rightcontainer .project_list a{color:#555555;}
+#rightcontainer .project_list a:hover{color:#9ab223;text-decoration:none;}
+#rightcontainer .new_project {margin:15px 0 0 15px;font:12px Arial;float:left;}
+#rightcontainer .new_project a{color:#555555;}
+#rightcontainer .new_project a:hover{color:#9ab223;text-decoration:none;}
+#taskslist {float:left;}
+
+
+.task{float:left;border-bottom:solid 1px #e0e0e0;padding-top:5px;padding-bottom:5px;}
+.index_r { width:70px;font:12px Arial;float:left;margin-right:10px;}
+.taskname_r {width:330px;font:12px Arial;float:left;margin-right:25px;}
+.resource_r {width:120px;font:12px Arial;float:left;margin-right:30px;}
+.startdate_r { width:100px;font:12px Arial;float:left;margin-right:30px;}
+.enddate_r { width:100px;font:12px Arial;float:left;}
+.handle {font:11px Arial; float:left;color:#e0e0e0;cursor:move; }
+
+.link_r {float:left;margin-left:20px; height:20px;}
+.link_r a{text-decoration: none;color:#6e6f6a;}
+.link_r a:hover{color : #9ab223;}
+#newtask {font:bold 13px Arial;}
+
+.tags{border-bottom:solid 1px #bcbaba;font:12px Arial;}
+.indexlabel{margin-right:40px;}
+.tasklabel{margin-right:315px;}
+.resourcelabel{margin-right:75px;}
+.startdatelabel{margin-right:57px;}
+.enddatelabel{margin-right:100px}
+
+.fields{background-color:#f5f7f7;height:40px;padding-top:10px;margin-bottom:5px;}
+.editfields{background-color:#f5f7f7;height:40px;padding-top:10px;margin-bottom:5px;}
+
+#field {font : 13px Arial; color : #6e6f6a;} 
+#field input{font:12px Arial;margin-right:20px;}
+#field textarea{font : 12px Arial;}
+.editfields input{font:12px Arial;margin-right:20px;}
+.editfields textarea{font : 12px Arial;}
+.select{font:12px Arial;margin-right:20px;}
+.projectselect{width:30px;}
+.submit{font:12px Arial;}
+.dateselect{margin-right:20px;}
+
+#login{border:solid 2px #555555;padding:20px;width:500px;margin:auto;margin-top:100px;}
+#login a{font:12px Arial;color:#555555; }
+#login a:hover{color:#9ab223; }
+.flash{margin-top:30px; color:red; font:12px Arial;}
+.userfield {font:13px Arial; color:#555555; margin:30px 0 20px 90px;}
+.pwdfield {font:13px Arial; color:#555555; margin:20px 0 20px 90px;}
+.userfield input{margin-left:20px;}
+.pwdfield input{margin-left:23px;}
+
+#footer {font:10px Arial; margin-top:20px;margin-bottom:20px;color : #B0B09D;}

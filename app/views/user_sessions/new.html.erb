@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>ProProjects :: Login</title>
+  <%= stylesheet_link_tag 'project' %>
+  <%= javascript_include_tag :defaults %>
+</head>
+<body>
+<div id="login">
+	<div align="center" class="logo">
+		<%= image_tag("/images/logo.png")%>
+	</div>
+	<div align="center" class="flash">
+		<%= flash[:notice]%>
+	</div>
+	<% form_for @user_session do |f| %>
+	  <%= f.error_messages %>
+	  <div class="userfield">
+	    <%= f.label :username %>
+	    <%= f.text_field :username %>
+	  </div>
+	  <div class="pwdfield">
+	    <%= f.label :password %>
+	    <%= f.password_field :password %>
+		<%= f.submit "Submit" %>
+	  </div>
+	  
+	<div align="center"><%= link_to "New User Registration", new_user_path %></div>
+	<% end %>
+</div>
+<div align="center" id="footer">
+	<span> Website © Copyright 2009 Shubham Bansal. All Rights Reserved. </span>
+</div>
+</body>
+
+
+

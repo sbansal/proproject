@@ -1,0 +1,6 @@
+<% Project.find_all_for_current_user(@current_user.firstname).each do |project| %>
+<% div_for(project, :class => "project_list") do %>
+	<%= link_to project.title, project_tasks_url(project.id, :id => project.id)%>
+<% end %>
+<div class="seperator"></div>
+<% end %>

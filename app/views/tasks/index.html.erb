@@ -1,0 +1,17 @@
+<div id="leftcontainer">
+	<div id="newtask">
+		<% @task = Task.new%>
+		<%= render :partial => 'newtask', :locals => {:task => @task} %>
+	</div>
+	<div id="taskslist">
+	<% @tasks.each do |task| %>
+		<%= render :partial => 'task', :locals => {:task => task} %>
+	<% end %>
+	</div>
+	<%= sortable_element("taskslist", :url => sort_tasks_path, :tag => :div, :handle => "handle") %>
+</div>
+
+<div id="rightcontainer">
+	<%= render :partial => 'rightcontainer' %>
+</div>
+
