@@ -1,4 +1,3 @@
-
 #container{margin:0 auto;min-width:1024px;max-width:100%;}
 
 .userinfo {font:12px Arial; text-align:right;color:#555555;padding-right:10px;}
@@ -13,14 +12,12 @@
 
 #navbar {text-align:right;float:right;height:35px;margin-top:40px;padding-right:10px;}
 
-
 .plan {background-color:#555555;float:left;margin-right:3px;}
 .plan a {color : #E2E4E4;height:25px;padding-top:10px;width:120px;text-align:center;float:left;font:12px Arial;text-decoration:none;}
 .plan a:hover {color : #9ab223;}
 .plan_current {background-color:#E2E4E4;float:left;margin-right:3px;}
 .plan_current a {color : #555555;height:25px;width:120px;text-align:center;float:left;font:12px Arial;text-decoration:none;padding-top:10px;}
 .plan_current a:hover {color : #9ab223;}
-
 
 #tasks a {color:#555555;font:12px Arial;text-decoration:none;}
 #tasks a:hover {color:#9ab223;}
@@ -54,8 +51,8 @@
 .people_current a:hover {color : #9ab223;}
 
 #maincontainer {background-color:#E2E4E4;padding:10px 0 20px 0;width:100%;float:left;}
-#leftcontainer {background-color:#ffffff;width:70%;float:left;margin-left:10px;padding:10px 5px 0 5px;}
-#rightcontainer {width:28%;float:right;}
+#leftcontainer {background-color:#ffffff;width:75%;float:left;margin-left:10px;padding:10px 5px 0 5px;}
+#rightcontainer {width:23%;float:right;}
 #rightcontainer .logo {height:100px;background-color:#ffffff;padding:40px 0 0 10px;}
 #rightcontainer .project_list_header {font:13px Arial;color:white;background-color:#555555;height:25px;margin-top:20px;padding:7px 0 0 10px; }
 #rightcontainer .project_list {margin:15px 0 0 15px;font:12px Arial;}
@@ -66,41 +63,44 @@
 #rightcontainer .new_project a:hover{color:#9ab223;text-decoration:none;}
 #taskslist {}
 
-
 .task{border-bottom:solid 1px #e0e0e0;padding:5px 0 5px 0;background-color:#ffffff;float:left;width:100%;}
-.taskname_r {width:50%;font:12px Arial;float:left;margin-left:5px;}
-.resource_r {width:25%;font:12px Arial;float:left;}
-.startdate_r {width:25%;font:12px Arial;float:left;}
-.enddate_r {width:25%;font:12px Arial;float:left;}
-.handle {width:10%;font:11px Arial;color:#e0e0e0;cursor:move;float:left;}
-.taskinfo {float:right;margin-right:5px;width:45%;}
+.taskname_r {width:35%;font:12px Arial;float:left;margin-left:5px;}
+.resource_r {width:24%;font:12px Arial;float:left;text-align:right;}
+.startdate_r {width:24%;font:12px Arial;float:left;text-align:right;}
+.enddate_r {width:24%;font:12px Arial;float:left;text-align:right;}
+.handle {width:10%;font:11px Arial;color:#e0e0e0;cursor:move;float:left;text-align:right;}
+.taskinfo {float:right;margin-right:5px;width:60%;}
 
-.link_r {width:7%;height:20px;float:left;}
+.link_r {width:7%;height:20px;float:left;text-align:right;}
 .link_r a{width:7%;text-decoration: none;color:#6e6f6a;}
 .link_r a:hover{color : #9ab223;}
 #newtask {font:bold 13px Arial;}
 
 .tags{font:12px Arial;width:100%;}
-.tasklabel{width:50%;float:left;}
-.resourcelabel{width:25%;float:left;}
-.startdatelabel{width:25%;float:left;}
-.enddatelabel{width:25%;float:left;}
-.taginfo{float:right;width:46%;}
+.tasklabel{width:35%;float:left;}
+.resourcelabel{width:25%;float:left;text-align:right;}
+.startdatelabel{width:24%;float:left;text-align:right;}
+.enddatelabel{width:23%;float:left;text-align:right;}
+.taginfo{float:right;width:62%;}
 
 .fields{background-color:#f5f7f7;height:40px;padding:10px 10px 0 0;margin:0 0 10px 0;border-top:solid 1px #bcbaba;}
-.editfields{background-color:#f5f7f7;height:40px;padding-top:10px;margin-bottom:5px;}
+.editfields{background-color:#f5f7f7;height:40px;padding:10px 10px 0 0;margin:0 0 10px 0;}
 
 #field {font:13px Arial;color:#6e6f6a;width:100%;float:left;} 
-#field input{font:12px Arial;width:50%;float:left;}
+#field input{font:12px Arial;width:35%;float:left;}
 #field textarea{font : 12px Arial;float:left;}
-.editfields input{font:12px Arial;float:left;width:50%;}
+.editfields input{font:12px Arial;float:left;width:35%;}
 .editfields textarea{font : 12px Arial;}
-.select{font:12px Arial;margin-right:20px;float:left;width:20%;}
+.select{font:12px Arial;float:left;width:25%;text-align:right;}
 .projectselect{float:left;}
-.submit{font:12px Arial;float:left;width:20%;}
-.task_input_info #submit input{float:left;width:100%;}
-.dateselect{float:left;width:25%;}
-.task_input_info {float:right;width:46%;}
+.submit{font:12px Arial;float:right;width:20%;}
+.update_submit{font:12px Arial;float:left;width:12%;}
+.cancel {font:12px Arial;float:left;width:12%;}
+.task_input_info #submit input{float:left;width:90%;}
+.task_input_info #update_submit input{float:left;width:90%;}
+.task_input_info #cancel input{float:left;width:90%;}
+.dateselect{float:left;width:25%;text-align:right;}
+.task_input_info {float:right;width:60%;}
 
 
 #login{border:solid 2px #555555;padding:20px;width:500px;margin:auto;margin-top:100px;}

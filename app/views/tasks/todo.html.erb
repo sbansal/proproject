@@ -1,4 +1,4 @@
-<div id="leftcontainer">
+<div id="leftcontainer_td">
 	<div class="header">Project Tasks</div>
 	<% for @task in @todo_tasks.sort_by{|i| i[:enddate]} %>
 	<% div_for(@task) do %>
@@ -6,15 +6,15 @@
 	  		<div class="check"><%= check_box_tag  '', :onclick => {:action => 'task_complete'}%></div>
 			<div class="todo_task"><%= @task.title %></div>
 			<div class="resource_due_info">
-				<div class="projectname"><%= @task.project.title%></div>
-				<div class="delim">|</div>
 				<div class="todo_duedate"><%=h @task.enddate.strftime("%b %d") %></div>
+				<div class="delim">|</div>
+				<div class="projectname"><%= @task.project.title%></div>
 			</div>
 	  	</div>
 	<% end %>
 	<% end %>
 </div>
 
-<div id="rightcontainer">
+<div id="rightcontainer_td">
 	<%= render :partial => 'rightcontainer' %>
 </div>

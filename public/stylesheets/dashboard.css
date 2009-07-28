@@ -1,28 +1,51 @@
-.header {background-color:#f5f7f7;font:bold 13px Arial;margin-bottom:10px; color:#000000; height:23px;padding:5px 0 0 5px;margin-top:5px;float:left;width:100%;}
-.taskname {width:550px;font:12px Arial;float:left;margin-left:10px;color:#555555}
-.taskname a{width:300px;font:12px Arial;color:#555555;text-decoration:none;}
+.header {background-color:#f5f7f7;font:bold 13px Arial;margin:5px 0 10px 0; color:#000000; height:23px;padding:5px 0 0 5px;float:left;width:99.5%;}
+.taskname {width:50%;font:12px Arial;float:left;margin-left:10px;color:#555555}
+.taskname a{font:12px Arial;color:#555555;text-decoration:none;}
 .taskname a:hover{color:#9ab223;}
-.projectname {width:160px;font:11px Arial;float:left;color:#9ab223;text-align:right;}
-.projectname a{width:120px;font:12px Arial;color:#555555;}
+.projectname {font:11px Arial;float:right;color:#9ab223;text-align:right;}
+.projectname a{font:12px Arial;color:#555555;}
 .projectname a:hover{color:#9ab223;}
-.resourcename {width:150px;font:12px Arial;float:left;margin-left:90px;color:#555555;}
-.resourcename a{width:150px;font:12px Arial;color:#9ab223;text-decoration:none;}
+.resourcename {width:50%;font:12px Arial;float:left;color:#555555;text-align:right;}
+.resourcename a{font:12px Arial;color:#9ab223;text-decoration:none;}
 .resourcename a:hover{text-decoration:underline;}
-.duedate { font:12px Arial;float:left;color:#555555;width:85px;}
+.duedate { font:12px Arial;float:left;color:#555555;width:50%;text-align:right;}
 
-.resource_due_info {float:right}
+.resource_due_info {float:right;width:40%;padding-right:10px;}
 
 .editlink {float:left;margin-left:20px; height:20px;}
 .deletelink {float:left;margin-left:20px; height:20px;margin-right:15px;}
 
-.late_task {font:italic 12px Arial; float:left;color:red;width:85px;}
-.current_week_task {font:italic 12px Arial; float:left;color:#555555;width:85px;}
+.late_task {font:italic 12px Arial; float:left;color:red;width:50%;text-align:right;}
+.current_week_task {font:italic 12px Arial; float:left;color:#555555;width:50%;text-align:right;}
 
 .edit_task{float:left;border-bottom:solid 1px #e0e0e0;padding-top:5px;padding-bottom:5px;}
 
 .task_status {width:150px;font:12px Arial;float:left;color:#555555;}
 .check {float:left;}
 
-.todo_task {width:550px;font:12px Arial;float:left;margin-left:10px;color:#555555;padding-top:4px;margin-right:80px;}
-.todo_duedate {font:italic 12px Arial; float:left;color:#555555;text-align:right;}
-.delim{float:left;margin:0 5px 0 5px;}
+.todo_task {width:50%;font:12px Arial;float:left;margin-left:10px;color:#555555;padding-top:4px;}
+.todo_duedate {font:italic 12px Arial; float:right;color:#555555;text-align:right;}
+.delim{float:right;margin:0 5px 0 5px;color:#555555;}
+
+#leftcontainer_db {background-color:#ffffff;width:72%;float:left;margin-left:10px;padding:10px 5px 0 5px;}
+#rightcontainer_db {width:26%;float:right;}
+#rightcontainer_db .logo {height:100px;background-color:#ffffff;padding:40px 0 0 10px;}
+#rightcontainer_db .project_list_header {font:13px Arial;color:white;background-color:#555555;height:25px;margin-top:20px;padding:7px 0 0 10px; }
+#rightcontainer_db .project_list {margin:15px 0 0 15px;font:12px Arial;}
+#rightcontainer_db .project_list a{color:#555555;}
+#rightcontainer_db .project_list a:hover{color:#9ab223;text-decoration:none;}
+#rightcontainer_db .new_project {margin:15px 0 0 15px;font:12px Arial;}
+#rightcontainer_db .new_project a{color:#555555;}
+#rightcontainer_db .new_project a:hover{color:#9ab223;text-decoration:none;}
+
+
+#leftcontainer_td {background-color:#ffffff;width:72%;float:left;margin-left:10px;padding:10px 5px 0 5px;}
+#rightcontainer_td {width:26%;float:right;}
+#rightcontainer_td .logo {height:100px;background-color:#ffffff;padding:40px 0 0 10px;}
+#rightcontainer_td .project_list_header {font:13px Arial;color:white;background-color:#555555;height:25px;margin-top:20px;padding:7px 0 0 10px; }
+#rightcontainer_td .project_list {margin:15px 0 0 15px;font:12px Arial;}
+#rightcontainer_td .project_list a{color:#555555;}
+#rightcontainer_td .project_list a:hover{color:#9ab223;text-decoration:none;}
+#rightcontainer_td .new_project {margin:15px 0 0 15px;font:12px Arial;}
+#rightcontainer_td .new_project a{color:#555555;}
+#rightcontainer_td .new_project a:hover{color:#9ab223;text-decoration:none;}

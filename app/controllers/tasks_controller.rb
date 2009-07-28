@@ -105,6 +105,13 @@ class TasksController < ApplicationController
     end
   end
   
+  def cancel_task
+    @task = Task.find(params[:id])
+    render :update do |page|
+      page.hide :partial => 'edittask', :object => @task
+    end
+  end
+  
   def edit_dashboard_task
     @task = Task.find(params[:id]) 
     render :update do |page|

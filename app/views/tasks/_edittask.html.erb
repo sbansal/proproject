@@ -3,7 +3,7 @@
   <%= f.error_messages %>
 	<div class="editfields">
 		<div>
-			<%= f.text_field(:title, :size => 50)%>
+			<%= f.text_field(:title)%>
 		</div>
 		<div class="task_input_info">
 			<div class="select">
@@ -15,8 +15,11 @@
 		    <div class="dateselect">
 				<%= f.date_select (:enddate, :discard_year => true, :use_short_month => true)%>
 			</div>		
-			<div class="submit" id="submit">
+			<div class="update_submit" id="update_submit">
 				<%= f.submit 'Update' %>
+			</div>
+			<div class="cancel" id="cancel">
+				<%= f.submit 'Cancel', :url => {:action => 'cancel_task', :id => @task.id} %>
 			</div>
 		</div>
 	</div>

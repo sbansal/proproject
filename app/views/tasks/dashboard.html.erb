@@ -1,4 +1,4 @@
-<div id="leftcontainer">
+<div id="leftcontainer_db">
 	<% @due_tasks.each do |project_id, tasks| %>
 	<div class="header"><%= Project.title(project_id) %></div>
 	  <% for @task in tasks.sort_by{|i| i[:enddate]} %>
@@ -14,15 +14,13 @@
 					<div class="resourcename">completed by <%=link_to Resource.resource(@completed_task.resource) %></div>
 					<div class="duedate">On <%=h @completed_task.completed_at.strftime("%b %d") %></div>
 				</div>
-					
-				
 			<% end %>
 			<div class="seperator"></div>
 		<% end %>
 	<% end %>
 </div>
 
-<div id="rightcontainer">
+<div id="rightcontainer_db">
 	<%= render :partial => 'rightcontainer' %>
 </div>
 <div class="seperator"></div>
